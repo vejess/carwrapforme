@@ -1,0 +1,73 @@
+/*===========================  FONTS CSS  ===========================*/
+
+@font-face {
+    font-family: 'Rubik-Black';
+    src: url('fonts/rubik/Rubik-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-BlackItalic';
+    src: url('fonts/rubik/Rubik-BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Bold';
+    src: url('fonts/rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-BoldItalic';
+    src: url('fonts/rubik/Rubik-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Italic';
+    src: url('fonts/rubik/Rubik-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Light';
+    src: url('fonts/rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-LightItalic';
+    src: url('fonts/rubik/Rubik-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Medium';
+    src: url('fonts/rubik/Rubik-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-MediumItalic';
+    src: url('fonts/rubik/Rubik-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('fonts/rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
