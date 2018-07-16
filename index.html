@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carwrapfor.me- брандиране на автомобили, стикери по поръчка, фолио</title>
+	<meta charset="UTF-8">
+
+	<style type="text/css">
+	/*==================================================== RESET CSS ====================================================*/
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+			list-style: none;
+		}
+
+		body{
+			background-color: #1B1C21;
+		}
+
+	/*==================================================== FONTS CSS ====================================================*/
+		@font-face {
+    		font-family: 'Rubik-Bold';
+    		src: url('fonts/rubik/Rubik-Bold.ttf') format('truetype');
+    		font-weight: normal;
+    		font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Rubik-Light';
+		    src: url('fonts/rubik/Rubik-Light.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Rubik-LightItalic';
+		    src: url('fonts/rubik/Rubik-LightItalic.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Rubik-Regular';
+		    src: url('fonts/rubik/Rubik-Regular.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+/*==================================================== HEADER CSS ====================================================*/
+
+		video{
+/*		    position: absolute;
+		    right: 0;
+		    bottom: 0;*/
+		    min-width: 100%;
+		    min-height: 100%;
+		    width: auto;
+		    height: auto;
+		    z-index: -200;
+		    background-size: cover;
+		}
+
+		.video_container{
+			position: relative;
+			width: 100%;
+		}
+
+		.video_txt{
+			display: inline-block;
+			position: absolute;
+			top: 43vh;
+			right: 25vw;
+			left: 25vw;
+			color: white;
+			font-family: 'Rubik-Light', arial;
+			text-transform: uppercase;
+			width: 40vw;
+		}
+
+		.video_txt>p{
+			font-size: 60px;			
+			text-align: center;
+			padding: 30px;
+			border:1px #F5C207 solid;
+			letter-spacing:2.5px;
+		}
+		
+		.header_container{
+			position: fixed;
+		    top: 0px;
+		    width: 100%;
+		    height: 90px;
+		    background-color: rgba(15, 16, 20, 0.5);
+		    border-bottom: solid 0.2px #F5C207;
+		    z-index: 2;
+		}
+		
+		.logo_content{
+		    position: absolute;
+		    margin-top: 25px;
+		    margin-left: 110px; 
+		}
+		
+		.menu{
+		    font-family: 'Rubik-Light', arial;
+		    font-size: 16px;
+		    box-sizing: border-box;
+		    position: absolute;
+		    top: 0;
+		    right: 20px;
+		    display: list-item;
+		    list-style: none;
+		}
+		
+		.menu>li{ 
+		    display: inline-block;
+		    list-style: none;
+		    line-height: 90px;
+		    margin-left: 66px;
+		    color: white;
+		}
+		
+		.menu>li:nth-last-child(1){
+		    margin-right: 90px;
+		}
+		.menu>li:hover{
+		    height: 90px;
+		    cursor: pointer;
+		    box-sizing: border-box;
+		    color: #F5C207;
+		    border-bottom: solid 8px #FFCC00;
+		}
+/*==================================================== PART_01 CSS ====================================================*/
+
+		.body_container{
+			box-sizing: border-box;
+			padding:80px 40px;
+			margin: auto;
+			width: 100%;
+			color: white;
+			background-color: #1B1C21;
+			margin-top: -4px;
+
+		}
+
+		.part_01_sub_container{
+			width: 1250px;
+			margin-left:auto;
+			margin-right: auto;	
+		}
+
+		.title_bold{
+			font-family: 'Rubik-Bold', sans-serif;
+			font-size: 29px;
+		}
+
+		.title_regular{
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 29px;
+		}
+
+		.half_line{
+			width: 200px;
+			height: 7px;
+			margin: 25px 0px;
+			background-color: #FFCC00;
+		}
+
+		.left_paragraf{
+			float: left;
+			display: inline-block;
+			width: 600px;
+			margin-right: 50px;
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 17px; 
+		}
+		.right_paragraf{
+			display: inline-block;
+			width: 600px;
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 17px; 
+		}						
+/*==================================================== uslugi CSS ====================================================*/
+		.uslugi{
+			background-color: #F3C300;
+		}
+		
+		.list_container{
+			width: 1225px;
+			margin: auto;
+		}
+
+		.title_regular{
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 29px;
+			letter-spacing: 1.5px;
+		}
+
+		.centered{
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+
+		}
+
+		.list_box{
+			display: inline-block;
+			margin-right: 20px;
+			font-family: 'Rubik-Regular',arial, sans-serif;
+			font-size: 17px;
+			letter-spacing: 0.2px;			 
+		}
+
+		.end_list_box{
+			display: inline-block;
+			font-family: 'Rubik-Regular',arial, sans-serif;
+			font-size: 17px;
+			letter-spacing: 0.2px;			 
+		}
+
+		.content_box{
+			display: block;
+			width: 390px;
+			height: 70px;
+			border:solid #FFFFFF 1px;			
+		}
+
+		.middle_content_box{
+			margin: 15px 0px;
+		}
+
+		.list_numbers{
+			display: inline-block;
+			float: left;
+			width: 70px;
+			height: 70px;
+			background-color: rgba(255, 255, 255, 0.5);
+			font-family: 'Rubik-Bold',arial, sans-serif;
+			font-size: 78px;
+			text-align: center;
+			color: #F3C300;
+		}
+
+		.strong_list_style{
+			box-sizing: border-box;
+			display: inline-block;
+			line-height: 70px;
+			padding-left: 5px;
+		}
+/*==================================================== BACKGROUND PIC CSS ====================================================*/
+		.background_pic{
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: -50;
+		}
+
+
+/*==================================================== EMPTY CSS ====================================================*/
+		.empty_pic_space{
+			height: 500px;
+		}
+
+/*==================================================== ZNAETE_LI_CHE CSS ====================================================*/
+
+		.znaete_li_che_sub_container{
+			width: 1225px;
+			margin: auto;
+		}
+
+		.znaete_li_che_title_regular{
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 29px;
+			text-transform: uppercase;
+		}
+
+		.znaete_li_che_half_line{
+			width: 200px;
+			height: 7px;
+			margin: 25px 0px;
+			background-color: #FFCC00;
+		}
+
+		.znaete_li_che_left_paragraf_container{
+			float: left;
+		}
+
+		.znaete_li_che_left_paragraf{
+			float: left;
+			display: inline-block;
+			width: 600px;
+			margin-right: 50px;
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 17px; 
+		}
+		.znaete_li_che_video_container{
+			display: inline-block;
+			width: 570px;
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 17px; 
+		}				
+
+/*==================================================== CERTIFICATE CSS ====================================================*/
+		.certificate_container{
+			border-top: 1px #676767 solid;
+		}
+
+		.body_sub_container{
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.left_side_container{
+			float: left;
+			width: 300px;			
+			margin-right: 200px;
+		}
+
+		.left_side_container:hover{
+    		color: #AAAAAA;
+    		cursor: pointer;
+		}
+
+		.right_side_container{
+			display: inline-block;
+			width: 300px;
+		}
+
+		.right_side_container:hover{
+    		color: #AAAAAA;
+    		cursor: pointer;			
+		}
+
+		.certif_icon{
+			display: block;
+			margin-left:auto;
+ 			margin-right:auto;
+		}
+
+		.certif_txt{
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 24px;
+			text-align: center;
+			padding: 15px 0px; 
+		}
+
+/*==================================================== FOOTER CSS ====================================================*/
+
+		.footer_container{
+			box-sizing: border-box;
+			padding: 20px 40px 40px 40px;
+			background-color: #17181D;
+			bottom: 0;
+			width: 100%;
+			color: #3F4148;
+		}
+
+		.footer_sub_container{
+			width: 1225px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.footer_contacts_container{
+			width: 418px;
+			float: left;
+		}
+
+		.footer_title{
+			margin: 10px 0px;
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+
+		.footer_contacts_container>p{
+			font-family: 'Rubik-LightItalic';
+		}
+
+		.tel_footer{
+			color: white;
+			opacity: 0.6;
+		}				
+
+		.footer_contacts, .footer_news{
+			width: 350px;
+			font-family: 'Rubik-Light',arial, sans-serif;
+			font-size: 16px; 
+			padding-bottom: 20px;
+		}
+
+		.footer_news>li{
+			padding: 10px 0px;
+			border-bottom: 1px #3F4148 solid;
+		}
+
+		.footer_news>li:hover{
+			color: #FFCC00;
+			border-bottom: 1px #FFCC00 solid;
+			cursor: pointer;
+		}
+		.footer_news_container{
+			vertical-align: top;
+			box-sizing: border-box;
+			display: inline-block;
+			padding-left: 30px;
+			padding-right: 25px;
+			width: 418px;
+			border-left: 1px #FFCC00 solid;
+			border-right: 1px #FFCC00 solid;			
+			font-family: 'Rubik-Light',arial, sans-serif;
+		}
+
+		.soc_btn_container{
+			padding-left: 30px;
+			display: inline-block;
+		}
+
+		.soc_btn_container>ul>li{
+			display: inline-block;
+			margin-right: 10px;
+			opacity: 0.2;
+		}
+
+		.soc_btn_container>ul>li:hover{
+			opacity: 0.1;
+		}				
+	</style>
+</head>
+<body>
+	<div class="video_container">
+			<div class="video_txt">
+				<p>БРАНДИРАНЕ НА АВТОМОБИЛИ</p>	
+			</div>
+	        <video autoplay loop class="fillWidth">
+	           	<source src="home_page/Symmetric-Traffic/MP4/Symmetric-Traffic.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	           	<source src="home_page/Symmetric-Traffic/MP4/Symmetric-Traffic/WEBM/Symmetric-Traffic.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	        </video>	
+	        <div class="poster hidden">
+<!-- 	            <img src="home_page/Symmetric-Traffic/MP4/Symmetric-Traffic/Snapshots/Symmetric-Traffic.jpg" alt=""> -->
+	</div>	
+<!-- /*==================================================== HEADER HTML ====================================================*/ -->
+	<header class="header_container">
+		<div class="logo_content">
+			<a href="../carwrapfor.me/index.html">
+				<img src="home_page/logo_carwrapforme_menu.png">
+			</a>
+		</div>
+		<nav>
+	    	<ul class="menu">
+	    	    <li>
+	    	    	<span>ЗА НАС</span>
+	    	    </li>
+	    	    <li>
+	    	    	<span>НОВИНИ</span>
+	    	    </li>
+	    	    <li>
+	    	    	<span>ГАЛЕРИЯ</span>
+	    	    </li>
+	    	    <li>
+	    	    	<span>СЪВЕТИ</span>
+	    	    </li>
+	    	    <li>
+	    	    	<span>КОНТАКТИ</span>
+	    	    </li>
+	    	</ul>
+		</nav>
+	</header>
+<!-- /*==================================================== PART_01 HTML ====================================================*/ -->
+	<section class="body_container">
+		<div class="part_01_sub_container"> 
+			<h1 class="title_bold">БРАНДИРАНЕТО НА АВТОМОБИЛИ -</h1>
+			<h2 class="title_regular">ЕФЕКТИВНА РЕКЛАМА ЗА ВАШИЯ БИЗНЕС</h2>
+			<div class="half_line"></div>
+			<p class="left_paragraf">През последните няколко години облепването на коли става все по- популярно и в България, като се разпростира вече при всички видове превозни средства. 
+				Добрият дизайн на графиката за автомобила съчетани с качествената му изработка и подходящия материал са основни предпоставки нашият екип да е един от лидерите на пазара. Освен превозни средства от градския транспорт все повече фирми брандират автопарковете.
+			</p>	
+			<p class="right_paragraf">
+				Все повече се популяризира цялостното облепване на транспортни средства, което е много ефектна реклама за много брандове. По този начин колите се превръщат в много силни рекламни 	послания за продукти и услуги.<br>	
+				С нарастването на интереса към облепването на автомобили на нашия пазар, клиентите стават все информирани за възможностите на този вид услуга. Затова ние сме изключително 	взискателни към нас самите и държим на 	високото 	качество на материалите за брандиране на коли, както и на прецизната изработка на всеки един автомобил.
+			</p>		
+		</div>
+	</section>
+<!-- /*==================================================== uslugi HTML ====================================================*/ -->
+	<section class="body_container uslugi">
+		<h2 class="title_regular centered">Услугите, свързани с брандирането на автомобили са:</h2>
+		<div class="list_container">
+			<ul class="list_box">
+				<li class="content_box">
+					<span class="list_numbers">1</span>
+					<strong class="strong_list_style">Частично брандиране на автомобил</strong>
+				</li>
+				<li class="content_box middle_content_box">
+					<span class="list_numbers">2</span>
+					<strong class="strong_list_style">Цялостно брандиране на автомобил</strong>
+				</li>
+				<li class="content_box">
+					<span class="list_numbers">3</span>
+					<strong class="strong_list_style">Апликиране на спортни автомобили</strong>
+				</li>
+			</ul>
+		
+			<ul class="list_box">
+				<li class="content_box">
+					<span class="list_numbers">4</span>
+					<strong class="strong_list_style">Персонализиране на автомобил</strong>
+				</li>
+				<li class="content_box middle_content_box">
+					<span class="list_numbers">5</span>
+					<strong class="strong_list_style">Визуален тунинг</strong>
+				</li>
+				<li class="content_box">
+					<span class="list_numbers">6</span>
+					<strong class="strong_list_style">Дизайн на графика за автомобил</strong>
+				</li>
+			</ul>		
+		
+			<ul class="end_list_box">
+				<li class="content_box">
+					<span class="list_numbers">7</span>
+					<strong class="strong_list_style">Стикери за коли</strong>
+				</li>
+				<li class="content_box middle_content_box">
+					<span class="list_numbers">8</span>
+					<strong class="strong_list_style">Затъмняване на стъкла</strong>
+				</li>
+				<li class="content_box ">
+					<span class="list_numbers">9</span>
+					<strong class="strong_list_style">Защитно фолио за фарове</strong>
+				</li>
+			</ul>
+			
+		</div>
+	</section>
+
+<!-- /*==================================================== EMPTY HTML ====================================================*/ -->
+	<div class="empty_pic_space">
+			<img class="background_pic" src="home_page/zatymnyavane_na_stykla.jpg">
+	</div>
+
+<!-- /*==================================================== ZNAETE_LI_CHE HTML ====================================================*/ -->
+	<div class="body_container znaete_li_che">
+		<div class="znaete_li_che_sub_container">
+			<div class="znaete_li_che_left_paragraf_container">
+				<h3 class="znaete_li_che_title_regular">Знаете ли, че....</h3>
+				<div class="znaete_li_che_half_line"></div>		
+				<p class="znaete_li_che_left_paragraf">Чрез брандирането на автомобил можете по най-ефективният и достъпен начин да рекламирате Вашия бизнес.
+					Материалите, с които ще се брандира колата, трябва да са подбрани винаги много внимателно. Преди да се пристъпи към изработка, се вземат предвид дизайна и силуета на автомобила.
+					С напредването и усъвършенстването на технологиите вече има уникални материали за цялостно облепване на коли.
+					любители на автомобилите все по-често предпочитат и се възползват от тези възможности за графичен тунинг на своя автомобил, за да постигане индивидуалне стил.
+				</p>				
+			</div>
+			<div class="znaete_li_che_video_container">
+				<iframe width="574" height="315" src="https://www.youtube.com/embed/cv0lj6auMqQ" frameborder="0" allowfullscreen></iframe>
+			</div>		
+		</div>
+	</div>
+
+<!-- /*==================================================== CERTIFICATE HTML ====================================================*/ -->
+	<div class="body_container certificate_container">
+		<div class="body_sub_container">
+			<div class="left_side_container">
+				<img class="certif_icon" src="home_page/certificate_icon.png"></img>				
+				<p class="certif_txt">3M Commercial Graphics <br>
+					Basic Application Training <br>
+					Workshop
+				</p>				
+			</div>
+	
+			<div class="right_side_container">
+				<img class="certif_icon" src="home_page/certificate_icon.png"></img>				
+				<p class="certif_txt">3M Commercial Graphics <br>
+					Basic Application Training <br>
+					Workshop
+				</p>				
+			</div>		
+		</div>
+	</div>
+
+<!-- /*==================================================== FOOTER HTML ====================================================*/ -->
+	<div class="footer_container">
+		<div class="footer_sub_container">
+			<div class="footer_contacts_container">
+				<h3 class="footer_title">КОНТАКТИ</h3>
+				<p class="footer_contacts">София 1612, кв. Лагера<br> 
+					ул. „Мокренски Проход“ № 23 <br> 
+					office@carwrapfor.me <br><br>
+					<span class="tel_footer">тел: +359 2 954 49 59,</span> 
+				</p>				
+			</div>
+
+			<div class="footer_news_container">
+				<h3 class="footer_title">НОВИНИ</h3>
+				<ul class="footer_news">
+					<li>Шампиона на Eurasia Wrap Masters за 2015 е Иво Дуков</li>
+					<li>Участието на наш апликатор в грандиозен скандинавски проект</li>
+				</ul>			
+			</div>
+
+			<div class="soc_btn_container">
+				<h3 class="footer_title">СОЦИАЛНИ МРЕЖИ</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/carwrapfor.me/" target="blank"><img src="home_page/soc_btn_f.png" width="45px"></a></li>
+					<li><a href="https://plus.google.com/111985046852509082995/posts" target="blank"><img src="home_page/soc_btn_g.png" width="45px"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCsaQqJsHy44uNx3Waqe9_NA" target="blank"><img src="home_page/soc_btn_yt.png" width="45px"></a></li>
+				</ul>
+			</div>
+
+			<div>
+				<p></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
